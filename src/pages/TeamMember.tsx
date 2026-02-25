@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import partner2Portrait from "@/assets/partner2-portrait.jpg";
 import partner3Portrait from "@/assets/partner3-portrait.jpg";
+import laxminarayanPortrait from "@/assets/laxminarayan-portrait.jpg";
 
 const teamData: Record<string, {
   name: string;
@@ -201,6 +202,7 @@ const teamData: Record<string, {
     lastName: "MURALIDHARAN",
     role: "Design Lead",
     tagline: "Crafting impactful digital products through design thinking and user empathy.",
+    portrait: laxminarayanPortrait,
     bio: [
       "I'm a Senior Experience Designer passionate about creating impactful digital products. With 5+ years of experience in product design and development, I started my journey as a graphic designer and evolved into a design leader shaping experiences for global brands.",
       "At Publicis Sapient, I lead design for large-scale digital transformation projects, blending user research, interaction design, and visual storytelling. As a Design Mentor at Designerrs Academy, I also nurture the next generation of designers.",
