@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Syne"', 'system-ui', 'sans-serif'],
+        display: ['Helvetica', 'Arial', 'sans-serif'],
         body: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },
