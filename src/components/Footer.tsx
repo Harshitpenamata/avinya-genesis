@@ -1,13 +1,13 @@
+import logoLandscape from "@/assets/logo-landscape-light.png";
+
 export default function Footer() {
   return (
     <footer className="border-t border-border/30 py-8 px-6">
       <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <div className="w-6 h-6 border border-primary/40 rotate-45 flex items-center justify-center">
-            <span className="text-primary font-display text-[10px] -rotate-45 font-bold">A</span>
-          </div>
+        <div className="flex items-center gap-4">
+          <img src={logoLandscape} alt="Avinya Interactive" className="h-8 w-auto opacity-70" />
           <span className="text-muted-foreground font-body text-sm">
-            © {new Date().getFullYear()} Avinya Interactive
+            © {new Date().getFullYear()}
           </span>
         </div>
         <div className="flex items-center gap-6">
