@@ -22,7 +22,7 @@ export default function HeroSection() {
 
 
   return (
-    <section ref={sectionRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section ref={sectionRef} aria-label="Hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <ParticleField />
 
       {/* Parallax radial glow */}
@@ -48,9 +48,10 @@ export default function HeroSection() {
             }}
             className="mb-6"
           >
+            <h1 className="sr-only">Avinya Interactive — Where Vision Meets Technology</h1>
             <img
               src={logoLandscape}
-              alt="Avinya Interactive"
+              alt="Avinya Interactive logo"
               className="w-[320px] md:w-[480px] lg:w-[600px] mx-auto"
             />
           </motion.div>

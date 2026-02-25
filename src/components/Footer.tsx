@@ -2,7 +2,7 @@ import logoLandscape from "@/assets/logo-landscape-light.png";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border/30 py-8 px-6">
+    <footer className="border-t border-border/30 py-8 px-6" role="contentinfo">
       <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-4">
           <img src={logoLandscape} alt="Avinya Interactive" className="h-8 w-auto opacity-70" />

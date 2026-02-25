@@ -50,7 +50,7 @@ export default function TeamSection() {
   const bgX = useTransform(scrollYProgress, [0, 1], [-150, 150]);
 
   return (
-    <section id="team" ref={sectionRef} className="relative py-32 px-6 overflow-hidden">
+    <section id="team" ref={sectionRef} aria-label="Meet the Team" className="relative py-32 px-6 overflow-hidden">
       {/* Parallax glow */}
       <motion.div
         className="absolute top-1/3 left-0 w-[350px] h-[350px] rounded-full bg-primary/3 blur-[130px]"
