@@ -16,9 +16,9 @@ const team = [
   },
   {
     name: "Abhishek Sonnakula",
-    role: "Software Engineer",
+    role: "Founding Engineer / Senior Software Engineer",
     slug: "abhishek",
-    description: "Building scalable software from front-end to back-end.",
+    description: "Founding engineer building scalable backend systems, spatial intelligence platforms, and enterprise-grade AI solutions.",
     photo: partner2Photo,
   },
   {
