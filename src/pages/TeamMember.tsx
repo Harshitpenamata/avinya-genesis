@@ -7,6 +7,10 @@ import Footer from "../components/Footer";
 import partner2Portrait from "@/assets/partner2-portrait.jpg";
 import partner3Portrait from "@/assets/partner3-portrait.jpg";
 import laxminarayanPortrait from "@/assets/laxminarayan-portrait.jpg";
+import collageHarshit from "@/assets/collage-harshit.jpg";
+import collageAbhishek from "@/assets/collage-abhishek.jpg";
+import collageBhanuteja from "@/assets/collage-bhanuteja.jpg";
+import collageLaxminarayan from "@/assets/collage-laxminarayan.jpg";
 
 const teamData: Record<string, {
   name: string;
@@ -16,6 +20,7 @@ const teamData: Record<string, {
   tagline: string;
   bioHeading: [string, string];
   bio: string[];
+  heroCollage?: string;
   portrait?: string;
   services: { title: string; description: string }[];
   capabilities: { category: string; items: string[] }[];
@@ -28,6 +33,7 @@ const teamData: Record<string, {
     lastName: "PENAMATA",
     role: "Creative Technologist",
     tagline: "Bridging cinematic storytelling with real-time technology.",
+    heroCollage: collageHarshit,
     portrait: "https://murarishettybhanu.github.io/avinyainteractive/harshit-portrait-t.png",
     bioHeading: ["Where Art Meets", "Engineering"],
     bio: [
@@ -105,6 +111,7 @@ const teamData: Record<string, {
     lastName: "SONNAKULA",
     role: "Software Engineer",
     tagline: "Building scalable software from front-end to back-end.",
+    heroCollage: collageAbhishek,
     portrait: partner2Portrait,
     bioHeading: ["Code is My", "Canvas"],
     bio: [
@@ -157,6 +164,7 @@ const teamData: Record<string, {
     lastName: "BHANUTEJA",
     role: "Software Engineer",
     tagline: "Engineering robust solutions and leading teams to deliver at scale.",
+    heroCollage: collageBhanuteja,
     portrait: partner3Portrait,
     bioHeading: ["Systems That", "Scale"],
     bio: [
@@ -209,6 +217,7 @@ const teamData: Record<string, {
     lastName: "MURALIDHARAN",
     role: "Product Designer",
     tagline: "Crafting impactful digital products through design thinking and user empathy.",
+    heroCollage: collageLaxminarayan,
     portrait: laxminarayanPortrait,
     bioHeading: ["Pixels With", "Purpose"],
     bio: [
@@ -300,7 +309,24 @@ export default function TeamMemberPage() {
 
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0">
+        {/* Collage background */}
+        {member.heroCollage && (
+          <motion.div
+            className="absolute inset-0 z-0"
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 0.15, scale: 1 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
+            <img
+              src={member.heroCollage}
+              alt=""
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
+            <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background" />
+          </motion.div>
+        )}
+        <div className="absolute inset-0 z-[1]">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[120px]" />
         </div>
 
