@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Bodoni Moda"', 'Georgia', 'serif'],
+        display: ['"Syne"', 'system-ui', 'sans-serif'],
         body: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },
