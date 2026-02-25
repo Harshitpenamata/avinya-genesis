@@ -15,7 +15,7 @@ export default {
     extend: {
       fontFamily: {
         display: ['Helvetica', 'Arial', 'sans-serif'],
-        body: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+        body: ['Helvetica', 'Arial', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },
       colors: {
