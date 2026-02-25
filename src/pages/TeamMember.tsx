@@ -113,12 +113,11 @@ const teamData: Record<string, {
     tagline: "Building scalable software from front-end to back-end.",
     heroCollage: collageAbhishek,
     portrait: partner2Portrait,
-    bioHeading: ["Code is My", "Canvas"],
+    bioHeading: ["Full Stack", "Developer"],
     bio: [
-      "I'm the kind of engineer who gets excited about a clean API contract and an elegant database schema in equal measure. Full-stack isn't just a title for me — it's how I think. Every feature I build, I see the whole picture: from the pixel the user touches to the query that hits the database.",
-      "My path took me from shipping enterprise applications at HTC Global Services to co-founding the engineering core at MultiSet AI, where I architected an AI platform from a blank repository to a production system serving real users.",
-      "I move between React frontends, Node backends, mobile apps, and cloud infrastructure with the same fluency — because the best products don't care where the stack boundaries are, and neither do I.",
-      "Great software isn't just functional — it's craft. Clean code, thoughtful architecture, and an obsession with the details that users feel but never see.",
+      "I am a full stack web developer with hands-on experience in software development, mobile app creation, front-end and back-end websites, and database/server management. I am passionate about building excellent websites and software that improve the lives of those around me.",
+      "My journey has taken me from building enterprise-scale applications at HTC Global Services to taking on the role of Founding Engineer at MultiSet AI, where I lead full-stack development for an AI-powered platform from the ground up.",
+      "I thrive on solving complex problems across the entire stack — from crafting responsive user interfaces with React and Next.js to architecting robust backend systems with Node.js and Python, managing cloud infrastructure on AWS, and designing scalable database solutions.",
     ],
     services: [
       { title: "Full-Stack Development", description: "End-to-end web application development with modern frameworks and scalable architecture." },
@@ -221,10 +220,9 @@ const teamData: Record<string, {
     portrait: laxminarayanPortrait,
     bioHeading: ["Pixels With", "Purpose"],
     bio: [
-      "Design, for me, has never been about making things pretty — it's about making things make sense. I started as a graphic designer, fell in love with the 'why' behind every interface, and evolved into a product designer who obsesses over the invisible moments: the micro-interaction that builds trust, the flow that feels effortless, the system that scales without losing its soul.",
-      "At Publicis Sapient, I lead experience design for large-scale digital transformation projects — the kind where a single design decision ripples across millions of users. I blend deep user research with interaction design and visual storytelling to create products that don't just work, but resonate.",
-      "As a Design Mentor at Designerrs Academy, I also invest in the next generation — reviewing portfolios, running critiques, and reminding aspiring designers that empathy is their most powerful tool.",
-      "My startup roots taught me to move fast, prototype fearlessly, and always keep the user at the center. Five years in, that hasn't changed — if anything, it's only gotten sharper.",
+      "Passionate about creating impactful digital products, I bring 5 years of experience in product design and development, having started my journey as a graphic designer. My background in the fast-paced startup world has given me a unique skill set — blending creativity with strategic thinking to deliver user-centered solutions.",
+      "At Publicis Sapient, I lead experience design for large-scale digital transformation projects, establishing design systems and component libraries for consistent cross-platform experiences. I collaborate with engineering, product, and strategy teams to deliver solutions that resonate with users.",
+      "As a Design Mentor at Designerrs Academy, I invest in the next generation — conducting portfolio reviews, design critiques, and industry readiness workshops to help aspiring designers build their craft.",
     ],
     services: [
       { title: "UX/UI Design", description: "End-to-end user experience and interface design for web and mobile products." },
