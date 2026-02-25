@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import partner2Photo from "@/assets/partner2-portrait.jpg";
 import partner3Photo from "@/assets/partner3-portrait.jpg";
+import laxminarayanPhoto from "@/assets/laxminarayan-portrait.jpg";
 
 const team = [
   {
@@ -32,7 +33,7 @@ const team = [
     role: "Design Lead",
     slug: "laxminarayan",
     description: "Crafting impactful digital products through design thinking and user empathy.",
-    photo: undefined as string | undefined,
+    photo: laxminarayanPhoto,
   },
 ];
 
