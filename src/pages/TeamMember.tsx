@@ -100,7 +100,7 @@ const teamData: Record<string, {
     name: "Abhishek Sonnakula",
     firstName: "ABHISHEK",
     lastName: "SONNAKULA",
-    role: "Full-Stack Engineer",
+    role: "Software Engineer",
     tagline: "Building scalable software from front-end to back-end.",
     portrait: partner2Portrait,
     bio: [
@@ -150,7 +150,7 @@ const teamData: Record<string, {
     name: "Murarishetty Bhanuteja",
     firstName: "MURARISHETTY",
     lastName: "BHANUTEJA",
-    role: "Tech Lead",
+    role: "Software Engineer",
     tagline: "Engineering robust solutions and leading teams to deliver at scale.",
     portrait: partner3Portrait,
     bio: [
@@ -200,7 +200,7 @@ const teamData: Record<string, {
     name: "Laxminarayan Muralidharan",
     firstName: "LAXMINARAYAN",
     lastName: "MURALIDHARAN",
-    role: "Design Lead",
+    role: "Product Designer",
     tagline: "Crafting impactful digital products through design thinking and user empathy.",
     portrait: laxminarayanPortrait,
     bio: [
