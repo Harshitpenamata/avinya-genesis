@@ -1,5 +1,5 @@
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import Navbar from "../components/Navbar";
@@ -503,6 +503,19 @@ function AnimatedSection({ children, className = "", delay = 0 }: { children: Re
 export default function TeamMemberPage() {
   const { slug } = useParams<{ slug: string }>();
   const member = teamData[slug || ""];
+
+  useEffect(() => {
+    if (member) {
+      document.title = `${member.name} – ${member.role} | Avinya Interactive`;
+      const meta = document.querySelector('meta[name="description"]');
+      if (meta) meta.setAttribute("content", `${member.tagline} Learn more about ${member.name} at Avinya Interactive.`);
+    }
+    return () => {
+      document.title = "Avinya Interactive | 3D, VFX, AI & Software Development";
+      const meta = document.querySelector('meta[name="description"]');
+      if (meta) meta.setAttribute("content", "Avinya Interactive crafts immersive digital experiences through 3D, VFX, AI solutions, and cutting-edge software development.");
+    };
+  }, [member]);
 
   if (!member) {
     return (
