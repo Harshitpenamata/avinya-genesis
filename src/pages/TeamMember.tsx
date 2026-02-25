@@ -314,7 +314,7 @@ export default function TeamMemberPage() {
           <motion.div
             className="absolute inset-0 z-0"
             initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 0.15, scale: 1 }}
+            animate={{ opacity: 0.6, scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
           >
             <img
