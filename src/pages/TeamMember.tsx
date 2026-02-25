@@ -188,6 +188,16 @@ const teamData: Record<string, {
     ],
     experience: [
       {
+        company: "HTC Global Services",
+        period: "May 2025 - Present",
+        title: "Senior Software Engineer",
+        bullets: [
+          "Developing and maintaining robust backend microservices using NestJS and Node.js for American Family Insurance (AmFam).",
+          "Designing and implementing RESTful APIs to handle insurance data processing, policy management, and business logic.",
+          "Collaborating with cross-functional teams across global delivery centers to deliver production-ready software.",
+        ],
+      },
+      {
         company: "Ravini Technologies Pvt Ltd (HONC)",
         period: "May 2023 - May 2025",
         title: "Tech Lead",
@@ -245,7 +255,7 @@ const teamData: Record<string, {
       {
         title: "DoorPe – The Neighborhood App",
         role: "Full Stack Developer",
-        description: "Developed DoorPe, a social networking app designed to foster community engagement and local business discovery.",
+        description: "Developed DoorPe, a social networking app designed to foster community engagement and local business discovery. The app allows neighbors to connect, share updates, and explore exclusive offers.",
         value: "Strengthened community engagement while giving local businesses a digital presence to reach nearby customers.",
         features: [
           "Community newsfeed for posts, images, and discussions",
@@ -291,16 +301,18 @@ const teamData: Record<string, {
         techStack: ["Node.js", "Express.js", "MongoDB", "React Native", "Unity (C#)"],
       },
       {
-        title: "eKruPay – Digital Payments Platform",
+        title: "eKruPay – Digital Payments & Transaction Platform",
         role: "Full Stack / Backend Developer",
-        description: "Worked on eKruPay, a digital payments platform focused on enabling secure and reliable online transactions.",
-        value: "Helped build a scalable and integration-ready payment backend, ensuring secure data handling and smooth transaction flows.",
+        description: "Worked on eKruPay, a digital payments platform focused on enabling secure and reliable online transactions. Contributed to backend development and API design to support payment workflows, user management, and system integrations.",
+        value: "Helped build a scalable and integration-ready payment backend, ensuring secure data handling and smooth transaction flows suitable for real-world fintech use cases.",
         features: [
           "Secure REST APIs for transaction processing and user operations",
           "Authentication and authorization for protected payment flows",
+          "Backend services to support wallet/payment-related operations",
           "Integration-ready APIs for frontend and third-party services",
+          "Emphasis on performance, reliability, and data consistency",
         ],
-        techStack: ["Node.js", "Express.js", "NestJS", "TypeScript", "MongoDB"],
+        techStack: ["Node.js", "Express.js", "NestJS", "TypeScript", "MongoDB", "REST APIs"],
       },
     ],
   },
