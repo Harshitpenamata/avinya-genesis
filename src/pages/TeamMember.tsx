@@ -4,6 +4,8 @@ import { useParams, Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import partner2Portrait from "@/assets/partner2-portrait.jpg";
+import partner3Portrait from "@/assets/partner3-portrait.jpg";
 
 const teamData: Record<string, {
   name: string;
@@ -99,6 +101,7 @@ const teamData: Record<string, {
     lastName: "TWO",
     role: "Creative Director",
     tagline: "Bringing bold visions to life through design and strategy.",
+    portrait: partner2Portrait,
     bio: [
       "A Creative Director with a passion for pushing boundaries in visual storytelling and brand experiences.",
       "Expertise spans across creative direction, brand strategy, and art direction for global clients.",
@@ -128,6 +131,7 @@ const teamData: Record<string, {
     lastName: "THREE",
     role: "Technical Lead",
     tagline: "Engineering robust solutions for complex creative challenges.",
+    portrait: partner3Portrait,
     bio: [
       "A Technical Lead specializing in scalable architectures and creative engineering solutions.",
       "Deep expertise in full-stack development, cloud infrastructure, and creative tooling.",
