@@ -2,6 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { useRef } from "react";
 import ParticleField from "./ParticleField";
+import logoLandscape from "@/assets/logo-landscape-light.png";
 
 export default function HeroSection() {
   const sectionRef = useRef(null);
@@ -19,9 +20,6 @@ export default function HeroSection() {
   const glowScale = useTransform(scrollYProgress, [0, 1], [1, 1.8]);
   const glowOpacity = useTransform(scrollYProgress, [0, 0.8], [0.05, 0]);
 
-  // Letter-by-letter stagger for "AVINYA"
-  const avinyaLetters = "AVINYA".split("");
-  const interactiveLetters = "Interactive".split("");
 
   return (
     <section ref={sectionRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -40,46 +38,22 @@ export default function HeroSection() {
         style={{ opacity, scale }}
       >
         <motion.div style={{ y: titleY }}>
-          <motion.h1
-            className="text-6xl md:text-8xl lg:text-9xl font-display font-bold tracking-tight mb-4"
-            initial="hidden"
-            animate="visible"
+          <motion.div
+            initial={{ opacity: 0, y: 60, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{
+              duration: 1,
+              delay: 0.3,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+            className="mb-6"
           >
-            <span className="inline-flex overflow-hidden">
-              {avinyaLetters.map((letter, i) => (
-                <motion.span
-                  key={i}
-                  className="text-foreground inline-block"
-                  initial={{ y: 120, opacity: 0, rotateX: -80 }}
-                  animate={{ y: 0, opacity: 1, rotateX: 0 }}
-                  transition={{
-                    duration: 0.8,
-                    delay: 0.3 + i * 0.06,
-                    ease: [0.16, 1, 0.3, 1],
-                  }}
-                >
-                  {letter}
-                </motion.span>
-              ))}
-            </span>{" "}
-            <span className="inline-flex overflow-hidden">
-              {interactiveLetters.map((letter, i) => (
-                <motion.span
-                  key={i}
-                  className="text-gradient italic inline-block"
-                  initial={{ y: 120, opacity: 0, rotateX: -80 }}
-                  animate={{ y: 0, opacity: 1, rotateX: 0 }}
-                  transition={{
-                    duration: 0.8,
-                    delay: 0.6 + i * 0.04,
-                    ease: [0.16, 1, 0.3, 1],
-                  }}
-                >
-                  {letter}
-                </motion.span>
-              ))}
-            </span>
-          </motion.h1>
+            <img
+              src={logoLandscape}
+              alt="Avinya Interactive"
+              className="w-[320px] md:w-[480px] lg:w-[600px] mx-auto"
+            />
+          </motion.div>
         </motion.div>
 
         <motion.div style={{ y: subtitleY }}>
