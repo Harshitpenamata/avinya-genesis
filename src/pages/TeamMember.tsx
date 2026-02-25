@@ -26,6 +26,7 @@ const teamData: Record<string, {
   capabilities: { category: string; items: string[] }[];
   experience: { company: string; period: string; title: string; bullets: string[] }[];
   work?: { title: string; tag: string; url: string; thumbnail: string }[];
+  projects?: { title: string; role: string; description: string; value: string; features: string[]; techStack: string[] }[];
 }> = {
   harshit: {
     name: "Harshit Penamata",
@@ -158,55 +159,148 @@ const teamData: Record<string, {
     ],
   },
   bhanuteja: {
-    name: "Murarishetty Bhanuteja",
-    firstName: "MURARISHETTY",
-    lastName: "BHANUTEJA",
-    role: "Software Engineer",
-    tagline: "Engineering robust solutions and leading teams to deliver at scale.",
+    name: "Bhanu Teja Murarishetty",
+    firstName: "BHANU TEJA",
+    lastName: "MURARISHETTY",
+    role: "Senior Software Engineer",
+    tagline: "Result-oriented engineer designing scalable, high-performance full-stack solutions.",
     heroCollage: collageBhanuteja,
     portrait: partner3Portrait,
     bioHeading: ["Systems That", "Scale"],
     bio: [
-      "I don't just write code — I build the systems that other engineers build on top of. As a Tech Lead, my job is to see three steps ahead: the architecture that won't buckle under scale, the pattern that saves the team weeks of refactoring, the decision that keeps shipping velocity high without sacrificing quality.",
-      "At HTC Global Services, I lead cross-functional engineering teams delivering enterprise solutions for clients across the globe. From designing microservices architectures to establishing coding standards and mentoring junior developers, I operate at the intersection of technical depth and team leadership.",
+      "Result-oriented Senior Software Engineer with more than 5 years of experience in designing and implementing scalable, high-performance software solutions. Specialized in full-stack development using the MERN stack, with strong proficiency in Node.js for backend development and React Native for building cross-platform mobile applications.",
+      "Proven ability to lead technical teams, streamline workflows, and deliver impactful products in dynamic, fast-paced environments. From building doorstep car care platforms to COVID-19 contact tracing systems for government authorities, I thrive on building products that make a real difference.",
       "I studied Computer Science at Guru Nanak Institutions, but the real education happened in production — debugging systems at 2 AM, learning that the best architecture is the one your team can actually maintain, and discovering that clear communication is a tech lead's most powerful tool.",
-      "The best technology teams are built on trust, relentless standards, and the shared belief that 'good enough' never is.",
     ],
     services: [
       { title: "Technical Leadership", description: "Leading engineering teams with clear vision, architecture, and execution strategy." },
-      { title: "Software Architecture", description: "Designing scalable, maintainable system architectures for enterprise applications." },
-      { title: "Web Application Development", description: "Building modern web applications with cutting-edge frameworks and tools." },
-      { title: "Cloud Solutions", description: "Cloud-native application development and infrastructure management." },
+      { title: "Full-Stack Development", description: "End-to-end web and mobile application development with the MERN stack." },
+      { title: "Mobile App Development", description: "Cross-platform mobile applications with React Native for iOS and Android." },
+      { title: "Backend & API Engineering", description: "Robust server-side systems, RESTful APIs, and microservices architecture with Node.js." },
+      { title: "Cloud & DevOps", description: "AWS infrastructure, Docker containerization, and production deployment." },
       { title: "Team Mentorship", description: "Growing engineering talent through code reviews, pair programming, and knowledge sharing." },
-      { title: "Technical Consulting", description: "Architecture reviews, technology strategy, and process optimization." },
     ],
     capabilities: [
-      { category: "Frontend", items: ["React", "Angular", "TypeScript", "JavaScript", "HTML/CSS"] },
-      { category: "Backend", items: ["Java", "Spring Boot", "Node.js", "Python", "REST APIs"] },
-      { category: "Databases", items: ["PostgreSQL", "MySQL", "MongoDB", "Oracle"] },
-      { category: "Cloud & DevOps", items: ["AWS", "Azure", "Docker", "Jenkins", "CI/CD"] },
-      { category: "Architecture", items: ["Microservices", "System Design", "Design Patterns", "Agile/Scrum"] },
-      { category: "Tools", items: ["Git", "Jira", "Confluence", "SonarQube", "Postman"] },
+      { category: "Frontend", items: ["React.js", "React Native", "Material-UI", "TypeScript", "JavaScript", "HTML/CSS"] },
+      { category: "Backend", items: ["Node.js", "Express.js", "NestJS", "Python", "C#", "RESTful APIs"] },
+      { category: "Database & Cloud", items: ["MongoDB", "Redis", "AWS", "SQS", "Cloudflare", "Docker"] },
+      { category: "Tools & Testing", items: ["Git", "Jest", "Selenium", "Redux Thunk"] },
     ],
     experience: [
       {
-        company: "HTC Global Services",
-        period: "2020 - Present",
+        company: "Ravini Technologies Pvt Ltd (HONC)",
+        period: "May 2023 - May 2025",
         title: "Tech Lead",
         bullets: [
-          "Leading cross-functional engineering teams on enterprise-scale projects for global clients.",
-          "Architecting scalable microservices-based solutions and establishing technical standards.",
-          "Driving code quality initiatives, mentoring developers, and conducting architecture reviews.",
+          "Led and mentored a cross-functional team of 8 developers, guiding both frontend and backend development.",
+          "Took end-to-end ownership of the Honc product, a platform providing doorstep car care services.",
+          "Established and enforced best practices for manual testing, ensuring consistent, bug-free releases.",
+          "Acted as a bridge between technical teams and stakeholders to align product goals with technical feasibility.",
         ],
       },
       {
-        company: "Guru Nanak Institutions Technical Campus",
-        period: "2016 - 2020",
-        title: "B.Tech in Computer Science & Engineering",
+        company: "Ravini Technologies Pvt Ltd (HONC)",
+        period: "Jul 2022 - May 2023",
+        title: "Senior Software Development Engineer",
         bullets: [
-          "Completed Bachelor of Technology with focus on Computer Science and Engineering.",
-          "Built foundational skills in algorithms, data structures, and software engineering.",
+          "Enhanced the user experience for the Honc app by developing responsive, feature-rich frontend components.",
+          "Built and integrated backend and frontend features for the partner app, enabling job availability views and workflows.",
+          "Designed and implemented an admin dashboard using React.js for managing users, tracking jobs, and monitoring system performance.",
         ],
+      },
+      {
+        company: "Ravini Technologies Pvt Ltd (HONC)",
+        period: "Aug 2020 - Jul 2022",
+        title: "Software Development Engineer",
+        bullets: [
+          "Contributed to both frontend and backend development of customer-facing app, partner app and dashboard.",
+          "Built and maintained backend services including APIs, data processing, and business logic.",
+          "Worked closely with senior developers, QA, and product teams to deliver timely and high-quality software releases.",
+        ],
+      },
+      {
+        company: "XLenz Inc",
+        period: "Dec 2019 - Aug 2020",
+        title: "Software Development Engineer",
+        bullets: [
+          "Developed and maintained RESTful APIs using Node.js and MongoDB for backend infrastructure.",
+          "Performed light development in C# within Unity for interactive AR elements.",
+          "Collaborated with cross-functional teams to implement and deploy AR functionalities.",
+        ],
+      },
+    ],
+    projects: [
+      {
+        title: "HONC – Doorstep Car Care Platform",
+        role: "Tech Lead / Full Stack Developer",
+        description: "Led development of HONC, a doorstep car care service platform, managing a cross-functional team of 8 developers. Built scalable backend services and responsive frontend features.",
+        value: "Delivered a production-ready platform serving thousands of users, improving operational efficiency and enabling smooth communication between customers, partners, and admins.",
+        features: [
+          "Partner app with job availability, acceptance, and tracking workflows",
+          "Customer-facing app with booking, service tracking, and payment integration",
+          "Admin dashboard for user management, job monitoring, and performance analytics",
+        ],
+        techStack: ["React.js", "Node.js", "MongoDB", "Express.js", "AWS", "Docker", "Redis"],
+      },
+      {
+        title: "DoorPe – The Neighborhood App",
+        role: "Full Stack Developer",
+        description: "Developed DoorPe, a social networking app designed to foster community engagement and local business discovery.",
+        value: "Strengthened community engagement while giving local businesses a digital presence to reach nearby customers.",
+        features: [
+          "Community newsfeed for posts, images, and discussions",
+          "Business discovery and promotions",
+          "Simple, user-friendly mobile experience",
+        ],
+        techStack: ["React Native", "Node.js", "Express.js", "MongoDB"],
+      },
+      {
+        title: "COVID-19 Contact Tracing Web Application",
+        role: "Backend & Full Stack Developer",
+        description: "Built a contact tracing platform for the Telangana Police Department during the pandemic. The system enabled efficient case tracking, monitoring of exposure chains, and quick intervention.",
+        value: "Helped government authorities manage COVID-19 risks more effectively, improving response time and reducing manual workloads.",
+        features: [
+          "Real-time case tracking and management",
+          "Integration with official health data for accuracy",
+          "Secure storage of sensitive data with role-based access controls",
+        ],
+        techStack: ["Node.js", "Express.js", "MongoDB", "React.js"],
+      },
+      {
+        title: "Doctor Duty Roster Application",
+        role: "Full Stack Developer",
+        description: "Developed a duty roster management system for doctors at ESIC Hyderabad. The platform automated scheduling, reducing manual errors and ensuring balanced shift distribution.",
+        value: "Improved hospital efficiency by streamlining doctor scheduling, ensuring optimal staff coverage across departments.",
+        features: [
+          "Roster generation with conflict detection",
+          "Department-wise scheduling and shift coverage tracking",
+          "Admin interface for monitoring and adjustments",
+        ],
+        techStack: ["Node.js", "React.js", "MongoDB", "Express.js"],
+      },
+      {
+        title: "XLenz – AR Application Platform",
+        role: "Software Development Engineer",
+        description: "Contributed to the development of immersive AR applications by designing and maintaining backend APIs to support seamless integration between a React Native mobile app and Unity-based AR interfaces.",
+        value: "Enabled cross-platform AR experiences by bridging mobile and Unity environments, ensuring scalability and performance.",
+        features: [
+          "Designed RESTful APIs using Node.js & MongoDB",
+          "Integrated backend services with Unity scripts for real-time interactions",
+          "Optimized performance for AR-ready applications",
+        ],
+        techStack: ["Node.js", "Express.js", "MongoDB", "React Native", "Unity (C#)"],
+      },
+      {
+        title: "eKruPay – Digital Payments Platform",
+        role: "Full Stack / Backend Developer",
+        description: "Worked on eKruPay, a digital payments platform focused on enabling secure and reliable online transactions.",
+        value: "Helped build a scalable and integration-ready payment backend, ensuring secure data handling and smooth transaction flows.",
+        features: [
+          "Secure REST APIs for transaction processing and user operations",
+          "Authentication and authorization for protected payment flows",
+          "Integration-ready APIs for frontend and third-party services",
+        ],
+        techStack: ["Node.js", "Express.js", "NestJS", "TypeScript", "MongoDB"],
       },
     ],
   },
@@ -307,7 +401,6 @@ export default function TeamMemberPage() {
 
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        {/* Collage background */}
         {member.heroCollage && (
           <motion.div
             className="absolute inset-0 z-0"
@@ -315,11 +408,7 @@ export default function TeamMemberPage() {
             animate={{ opacity: 0.6, scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
           >
-            <img
-              src={member.heroCollage}
-              alt=""
-              className="w-full h-full object-cover"
-            />
+            <img src={member.heroCollage} alt="" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
             <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background" />
           </motion.div>
@@ -371,13 +460,13 @@ export default function TeamMemberPage() {
         </div>
       </section>
 
-      {/* Work */}
+      {/* Best Projects (video work for Harshit) */}
       {member.work && member.work.length > 0 && (
         <section className="py-24 px-6">
           <div className="container mx-auto max-w-5xl">
             <AnimatedSection>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-                Selected <span className="text-gradient italic">Work</span>
+                Best <span className="text-gradient italic">Projects</span>
               </h2>
               <p className="text-muted-foreground font-body mb-12">Highlighting recent projects.</p>
             </AnimatedSection>
@@ -398,6 +487,51 @@ export default function TeamMemberPage() {
                       <p className="text-primary text-xs tracking-[0.15em] uppercase font-body mt-1">{item.tag}</p>
                     </div>
                   </a>
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Projects Section */}
+      {member.projects && member.projects.length > 0 && (
+        <section className="py-24 px-6">
+          <div className="container mx-auto max-w-5xl">
+            <AnimatedSection>
+              <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+                Best <span className="text-gradient italic">Projects</span>
+              </h2>
+              <p className="text-muted-foreground font-body mb-12">Key projects and contributions.</p>
+            </AnimatedSection>
+            <div className="space-y-6">
+              {member.projects.map((project, i) => (
+                <AnimatedSection key={i} delay={i * 0.08}>
+                  <div className="p-8 glass rounded-sm hover:glow-border transition-all duration-300">
+                    <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-3">
+                      <div>
+                        <h3 className="text-xl font-display font-bold text-foreground">{project.title}</h3>
+                        <p className="text-primary text-sm font-body">{project.role}</p>
+                      </div>
+                    </div>
+                    <p className="text-muted-foreground text-sm font-body mb-4">{project.description}</p>
+                    <p className="text-muted-foreground text-sm font-body mb-4 italic border-l-2 border-primary/30 pl-4">{project.value}</p>
+                    <div className="mb-4">
+                      <h4 className="text-foreground text-xs font-display font-bold uppercase tracking-wider mb-2">Key Features</h4>
+                      <ul className="space-y-1">
+                        {project.features.map((f, j) => (
+                          <li key={j} className="text-muted-foreground text-sm font-body pl-4 border-l-2 border-primary/20">{f}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {project.techStack.map((tech) => (
+                        <span key={tech} className="px-3 py-1 text-xs font-body text-primary bg-primary/10 rounded-sm border border-primary/20">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </AnimatedSection>
               ))}
             </div>
