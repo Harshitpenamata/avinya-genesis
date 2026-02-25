@@ -7,10 +7,10 @@ import Footer from "../components/Footer";
 import partner2Portrait from "@/assets/partner2-portrait.jpg";
 import partner3Portrait from "@/assets/partner3-portrait.jpg";
 import laxminarayanPortrait from "@/assets/laxminarayan-portrait.jpg";
-import collageHarshit from "@/assets/collage-harshit.jpg";
-import collageAbhishek from "@/assets/collage-abhishek.jpg";
-import collageBhanuteja from "@/assets/collage-bhanuteja.jpg";
-import collageLaxminarayan from "@/assets/collage-laxminarayan.jpg";
+import bgVideoHarshit from "@/assets/bg-video-harshit.mp4";
+import bgVideoAbhishek from "@/assets/bg-video-abhishek.mp4";
+import bgVideoBhanuteja from "@/assets/bg-video-bhanuteja.mp4";
+import bgVideoLaxminarayan from "@/assets/bg-video-laxminarayan.mp4";
 
 const teamData: Record<string, {
   name: string;
@@ -20,7 +20,7 @@ const teamData: Record<string, {
   tagline: string;
   bioHeading: [string, string];
   bio: string[];
-  heroCollage?: string;
+  heroVideo?: string;
   portrait?: string;
   services: { title: string; description: string }[];
   capabilities: { category: string; items: string[] }[];
@@ -34,7 +34,7 @@ const teamData: Record<string, {
     lastName: "PENAMATA",
     role: "Creative Technologist",
     tagline: "Bridging cinematic storytelling with real-time technology.",
-    heroCollage: collageHarshit,
+    heroVideo: bgVideoHarshit,
     portrait: "https://murarishettybhanu.github.io/avinyainteractive/harshit-portrait-t.png",
     bioHeading: ["Where Art Meets", "Engineering"],
     bio: [
@@ -112,7 +112,7 @@ const teamData: Record<string, {
     lastName: "SONNAKULA",
     role: "Software Engineer",
     tagline: "Building scalable software from front-end to back-end.",
-    heroCollage: collageAbhishek,
+    heroVideo: bgVideoAbhishek,
     portrait: partner2Portrait,
     bioHeading: ["Full Stack", "Developer"],
     bio: [
@@ -164,7 +164,7 @@ const teamData: Record<string, {
     lastName: "MURARISHETTY",
     role: "Senior Software Engineer",
     tagline: "Result-oriented engineer designing scalable, high-performance full-stack solutions.",
-    heroCollage: collageBhanuteja,
+    heroVideo: bgVideoBhanuteja,
     portrait: partner3Portrait,
     bioHeading: ["Systems That", "Scale"],
     bio: [
@@ -310,7 +310,7 @@ const teamData: Record<string, {
     lastName: "MURALIDHARAN",
     role: "Product Designer",
     tagline: "Crafting impactful digital products through design thinking and user empathy.",
-    heroCollage: collageLaxminarayan,
+    heroVideo: bgVideoLaxminarayan,
     portrait: laxminarayanPortrait,
     bioHeading: ["Pixels With", "Purpose"],
     bio: [
@@ -401,14 +401,21 @@ export default function TeamMemberPage() {
 
       {/* Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        {member.heroCollage && (
+        {member.heroVideo && (
           <motion.div
             className="absolute inset-0 z-0"
             initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 0.6, scale: 1 }}
+            animate={{ opacity: 0.5, scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
           >
-            <img src={member.heroCollage} alt="" className="w-full h-full object-cover" />
+            <video
+              src={member.heroVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
             <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-transparent to-background" />
           </motion.div>
