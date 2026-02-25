@@ -16,7 +16,7 @@ export default function ContactSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.4], [0, 1]);
 
   return (
-    <section id="contact" ref={sectionRef} className="relative py-32 px-6 overflow-hidden">
+    <section id="contact" ref={sectionRef} aria-label="Contact Us" className="relative py-32 px-6 overflow-hidden">
       <div className="section-divider mb-32" />
 
       <motion.div className="container mx-auto max-w-4xl" style={{ scale, opacity }}>

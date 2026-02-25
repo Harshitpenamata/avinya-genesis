@@ -33,13 +33,13 @@ export default function Navbar() {
   };
 
   return (
-    <motion.nav
+    <motion.header
+      role="banner"
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 glass"
-    >
-      <div className="container mx-auto flex items-center justify-between py-4 px-6">
+      className="fixed top-0 left-0 right-0 z-50 glass">
+      <nav className="container mx-auto flex items-center justify-between py-4 px-6" aria-label="Main navigation">
         <Link to="/" className="flex items-center group">
           <img src={logoLandscape} alt="Avinya Interactive" className="h-10 w-auto" />
         </Link>
@@ -62,7 +62,7 @@ export default function Navbar() {
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
-      </div>
+      </nav>
 
       <AnimatePresence>
         {mobileOpen && (
@@ -86,6 +86,6 @@ export default function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
-    </motion.nav>
+    </motion.header>
   );
 }

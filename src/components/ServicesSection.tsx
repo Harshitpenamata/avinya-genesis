@@ -102,7 +102,7 @@ export default function ServicesSection() {
   const headingWords = ["End-to-end", "creative", "and", "technical", "solutions", "for", "the", "next", "generation", "of", "digital", "experiences."];
 
   return (
-    <section id="services" ref={sectionRef} className="relative py-32 px-6 overflow-hidden">
+    <section id="services" ref={sectionRef} aria-label="Our Services" className="relative py-32 px-6 overflow-hidden">
       {/* Parallax background accent */}
       <motion.div
         className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-primary/3 blur-[150px]"
