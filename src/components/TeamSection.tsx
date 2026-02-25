@@ -2,6 +2,8 @@ import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import partner2Photo from "@/assets/partner2-portrait.jpg";
+import partner3Photo from "@/assets/partner3-portrait.jpg";
 
 const team = [
   {
@@ -9,24 +11,28 @@ const team = [
     role: "Creative Technologist",
     slug: "harshit",
     description: "Bridging cinematic storytelling with real-time technology.",
+    photo: "https://murarishettybhanu.github.io/avinyainteractive/harshit-portrait-t.png",
   },
   {
     name: "Partner Two",
     role: "Creative Director",
     slug: "partner-2",
     description: "Bringing bold visions to life through design and strategy.",
+    photo: partner2Photo,
   },
   {
     name: "Partner Three",
     role: "Technical Lead",
     slug: "partner-3",
     description: "Engineering robust solutions for complex creative challenges.",
+    photo: partner3Photo,
   },
   {
     name: "Partner Four",
     role: "Design Lead",
     slug: "partner-4",
     description: "Crafting intuitive experiences at the intersection of art and technology.",
+    photo: undefined as string | undefined,
   },
 ];
 
@@ -114,11 +120,16 @@ function TeamCard({ member, index }: { member: typeof team[0]; index: number }) 
         className="group block p-8 glass rounded-sm hover:glow-border transition-all duration-500"
       >
         <motion.div
-          className="flex items-start justify-between"
+          className="flex items-start justify-between gap-4"
           whileHover={{ x: 6 }}
           transition={{ duration: 0.3 }}
         >
-          <div>
+          {member.photo && (
+            <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-primary/30 flex-shrink-0">
+              <img src={member.photo} alt={member.name} className="w-full h-full object-cover" />
+            </div>
+          )}
+          <div className="flex-1 min-w-0">
             <h3 className="text-2xl font-display font-bold text-foreground group-hover:text-gradient transition-all">
               {member.name}
             </h3>
