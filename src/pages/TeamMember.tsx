@@ -14,6 +14,7 @@ const teamData: Record<string, {
   lastName: string;
   role: string;
   tagline: string;
+  bioHeading: [string, string];
   bio: string[];
   portrait?: string;
   services: { title: string; description: string }[];
@@ -28,10 +29,12 @@ const teamData: Record<string, {
     role: "Creative Technologist",
     tagline: "Bridging cinematic storytelling with real-time technology.",
     portrait: "https://murarishettybhanu.github.io/avinyainteractive/harshit-portrait-t.png",
+    bioHeading: ["Where Art Meets", "Engineering"],
     bio: [
-      "I'm a Creative Technologist working at the intersection of cinematic storytelling and real-time technology. With a hybrid background spanning traditional filmmaking and cutting-edge virtual production, I bring a unique perspective to every project.",
-      "My expertise lies in building real-time pipelines, LED volume workflows, and creative tooling that empowers storytellers. From feature films to immersive experiences, I specialize in translating creative vision into technical reality.",
-      "I believe the best technology is invisible—it should amplify creativity, not constrain it.",
+      "I live at the crossroads of cinema and code. Trained in traditional filmmaking yet fluent in real-time engines, I've spent my career building the invisible bridges between a director's vision and the pixels on an LED wall.",
+      "From supervising virtual production stages on feature films like 'Those About to Die' and 'Here' at DNEG, to crafting immersive experiences with Unreal Engine at The Mill for Disney and Amazon — I've always been drawn to the impossible shot, the one that needs technology to bend just a little further.",
+      "As an Epic Games Authorized Instructor and mentor at CG Spectrum, I also pay it forward — training the next wave of artists and technologists to push boundaries I haven't even imagined yet.",
+      "I believe the best technology is invisible — it should amplify creativity, not constrain it.",
     ],
     services: [
       { title: "Virtual Production", description: "LED volume workflows, In-Camera VFX, and real-time on-set supervision." },
@@ -103,10 +106,12 @@ const teamData: Record<string, {
     role: "Software Engineer",
     tagline: "Building scalable software from front-end to back-end.",
     portrait: partner2Portrait,
+    bioHeading: ["Code is My", "Canvas"],
     bio: [
-      "I'm a Full-Stack Engineer passionate about building excellent software that makes a difference. With deep expertise spanning front-end interfaces, back-end systems, mobile applications, and database architecture, I bring a holistic approach to every project.",
-      "My experience ranges from enterprise-scale applications at HTC Global Services to founding engineering roles at AI startups like MultiSet AI. I thrive in environments where I can architect complete solutions from the ground up.",
-      "I believe great software is built at the intersection of clean code, thoughtful architecture, and relentless attention to user experience.",
+      "I'm the kind of engineer who gets excited about a clean API contract and an elegant database schema in equal measure. Full-stack isn't just a title for me — it's how I think. Every feature I build, I see the whole picture: from the pixel the user touches to the query that hits the database.",
+      "My path took me from shipping enterprise applications at HTC Global Services to co-founding the engineering core at MultiSet AI, where I architected an AI platform from a blank repository to a production system serving real users.",
+      "I move between React frontends, Node backends, mobile apps, and cloud infrastructure with the same fluency — because the best products don't care where the stack boundaries are, and neither do I.",
+      "Great software isn't just functional — it's craft. Clean code, thoughtful architecture, and an obsession with the details that users feel but never see.",
     ],
     services: [
       { title: "Full-Stack Development", description: "End-to-end web application development with modern frameworks and scalable architecture." },
@@ -153,10 +158,12 @@ const teamData: Record<string, {
     role: "Software Engineer",
     tagline: "Engineering robust solutions and leading teams to deliver at scale.",
     portrait: partner3Portrait,
+    bioHeading: ["Systems That", "Scale"],
     bio: [
-      "I'm a Tech Lead with a strong foundation in computer science and a passion for building reliable, high-performance software systems. My journey from hands-on development to technical leadership has given me a unique ability to bridge strategy and execution.",
-      "At HTC Global Services, I lead engineering teams delivering enterprise solutions for global clients. I specialize in architecting scalable applications, mentoring developers, and driving technical excellence across projects.",
-      "I believe the best technology teams are built on trust, clear communication, and a shared commitment to quality.",
+      "I don't just write code — I build the systems that other engineers build on top of. As a Tech Lead, my job is to see three steps ahead: the architecture that won't buckle under scale, the pattern that saves the team weeks of refactoring, the decision that keeps shipping velocity high without sacrificing quality.",
+      "At HTC Global Services, I lead cross-functional engineering teams delivering enterprise solutions for clients across the globe. From designing microservices architectures to establishing coding standards and mentoring junior developers, I operate at the intersection of technical depth and team leadership.",
+      "I studied Computer Science at Guru Nanak Institutions, but the real education happened in production — debugging systems at 2 AM, learning that the best architecture is the one your team can actually maintain, and discovering that clear communication is a tech lead's most powerful tool.",
+      "The best technology teams are built on trust, relentless standards, and the shared belief that 'good enough' never is.",
     ],
     services: [
       { title: "Technical Leadership", description: "Leading engineering teams with clear vision, architecture, and execution strategy." },
@@ -203,10 +210,12 @@ const teamData: Record<string, {
     role: "Product Designer",
     tagline: "Crafting impactful digital products through design thinking and user empathy.",
     portrait: laxminarayanPortrait,
+    bioHeading: ["Pixels With", "Purpose"],
     bio: [
-      "I'm a Senior Experience Designer passionate about creating impactful digital products. With 5+ years of experience in product design and development, I started my journey as a graphic designer and evolved into a design leader shaping experiences for global brands.",
-      "At Publicis Sapient, I lead design for large-scale digital transformation projects, blending user research, interaction design, and visual storytelling. As a Design Mentor at Designerrs Academy, I also nurture the next generation of designers.",
-      "My background in the fast-paced startup world has given me a unique skill set — I move fast, think holistically, and always keep the user at the center of every decision.",
+      "Design, for me, has never been about making things pretty — it's about making things make sense. I started as a graphic designer, fell in love with the 'why' behind every interface, and evolved into a product designer who obsesses over the invisible moments: the micro-interaction that builds trust, the flow that feels effortless, the system that scales without losing its soul.",
+      "At Publicis Sapient, I lead experience design for large-scale digital transformation projects — the kind where a single design decision ripples across millions of users. I blend deep user research with interaction design and visual storytelling to create products that don't just work, but resonate.",
+      "As a Design Mentor at Designerrs Academy, I also invest in the next generation — reviewing portfolios, running critiques, and reminding aspiring designers that empathy is their most powerful tool.",
+      "My startup roots taught me to move fast, prototype fearlessly, and always keep the user at the center. Five years in, that hasn't changed — if anything, it's only gotten sharper.",
     ],
     services: [
       { title: "UX/UI Design", description: "End-to-end user experience and interface design for web and mobile products." },
@@ -318,7 +327,7 @@ export default function TeamMemberPage() {
         <div className="container mx-auto max-w-5xl">
           <AnimatedSection>
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-8">
-              Where Art Meets <span className="text-gradient italic">Engineering</span>
+              {member.bioHeading[0]} <span className="text-gradient italic">{member.bioHeading[1]}</span>
             </h2>
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-12 items-start">
